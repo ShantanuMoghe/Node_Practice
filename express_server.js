@@ -4,8 +4,9 @@ const PORT= 5000;
 const jsonData = require('./data');
 const logger = require('./logger_middleware');
 
+app.use('/',logger);
 
-app.get('/', logger, (req, res)=>{
+app.get('/', (req, res)=>{
     //res.json(jsonData)
     res.send(`<H1>Home Page</H1><a href="/api/products">Products</a>`)
 })

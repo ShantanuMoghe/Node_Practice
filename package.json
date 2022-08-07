@@ -1,14 +1,15 @@
 {
   "dependencies": {
+    "express": "^4.18.1",
     "nodemon": "^2.0.19"
   },
   "name": "node_practice",
   "description": "Repository contains Nodejs, Express, MongoDB, Socket.io code Practice codes",
   "version": "1.0.0",
-  "main": "index.js",
-  "devDependencies": {},
+  "main": "express_server.js",
   "scripts": {
     "start": "nodemon index.js",
+    "exp": "nodemon express_server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

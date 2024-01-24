@@ -11,6 +11,9 @@ const PORT = 3000;
 const nodeServer = http.createServer((req, res) => {
     if (req) {
         console.log('Request made');
+        if(req.url === '/index'){
+            console.log('at index')
+        }
         res.end(`<html>
             <body>
             <H1>Request is made</H1>

@@ -3,6 +3,9 @@ const app = express();
 const PORT= 5000;
 const jsonData = require('./data');
 const logger = require('./logger_middleware');
+var  config = require('./dbConfig');
+const  sql = require('mssql');
+
 
 app.use('/',logger);
 
